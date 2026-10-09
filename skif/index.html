@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>СКИФ МЕДИА — Создаём смыслы. Сохраняем наследие.</title>
+    <meta name="description"
+        content="Кино, медиа и культурные проекты. История, культура и человек — в центре каждой истории СКИФ МЕДИА.">
+    <link rel="icon" href="assets/emblem.webp">
+    <link rel="preload" as="image" href="assets/emblem.webp">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <div id="intro" class="intro" hidden>
+        <div class="intro-heading">СКИФ МЕДИА<span>ИСТОРИЯ НАЧИНАЕТСЯ С ПРИКОСНОВЕНИЯ</span></div><button id="enter"
+            class="emblem-button" aria-label="Раздвинуть две половины эмблемы и открыть сайт"><span id="shards"
+                aria-hidden="true"></span><img id="whole" src="assets/emblem.webp"
+                alt="Золотая скифская эмблема с женским профилем и зверем"></button>
+        <div class="intro-bottom"><span>НАЖМИТЕ НА ЭМБЛЕМУ</span><button id="skip">Пропустить вступление</button></div>
+    </div>
+    <div id="site">
+        <header><a class="brand" href="#home"><img src="assets/emblem.webp" alt="">СКИФ МЕДИА</a><button
+                id="menu-toggle" aria-expanded="false" aria-controls="nav">Меню</button>
+            <nav id="nav"><a href="#about">О компании</a><a href="#people">Люди</a><a href="#services">Услуги</a><a
+                    href="#gallery">Галерея</a><a href="#history">История Аржаан</a><a href="#contacts">Контакты</a>
+            </nav><span class="lang">RU</span>
+        </header>
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <p class="eyebrow">ПРОДЮСЕРСКАЯ КОМПАНИЯ</p>
+                    <h1 tabindex="-1">СКИФ МЕДИА</h1>
+                    <p class="hero-subtitle">КИНО <i>·</i> КУЛЬТУРНЫЕ ПРОЕКТЫ <i>·</i> МЕДИА</p><a class="outline"
+                        href="#about">Создаём смыслы. Сохраняем наследие.</a>
+                </div><a class="scroll-link" href="#about">ПОЗНАКОМИТЬСЯ С НАМИ <span>↓</span></a>
+            </section>
+            <section id="about" class="about scenic">
+                <div class="container split">
+                    <div class="copy">
+                        <p class="eyebrow">О КОМПАНИИ</p>
+                        <h2>Мы создаём кино и медиа<br>о вечных ценностях</h2>
+                        <p>СКИФ МЕДИА — продюсерская компания, объединённая интересом к истории, культуре и человеку. Мы
+                            создаём художественные и документальные фильмы, медиаконтент и культурные проекты, которые
+                            открывают прошлое, говорят о настоящем и формируют будущее.</p>
+                        <details>
+                            <summary class="outline">Подробнее о компании</summary>
+                            <p>В центре наших историй — люди и их связь со временем. От первой идеи и исследования до
+                                съёмок и финального монтажа мы соединяем документальный взгляд с выразительным языком
+                                кино.</p>
+                        </details>
+                    </div><img class="about-emblem" src="assets/emblem.webp"
+                        alt="Скифская эмблема: царица в украшениях и золотой зверь" loading="lazy">
+                </div>
+            </section>
+            <section id="people" class="section container">
+                <p class="eyebrow">ЛЮДИ</p>
+                <div class="people-grid">
+                    <article class="person">
+                        <div class="person-image director"></div>
+                        <div>
+                            <p class="eyebrow">ГЕНЕРАЛЬНЫЙ ДИРЕКТОР</p>
+                            <h3>За каждой историей —<br>люди</h3>
+                            <p>Развитие компании, продюсирование и команда культурных проектов.</p>
+                            <details>
+                                <summary>О направлении</summary>
+                                <p>Объединяем авторов, исследователей и партнёров, чтобы идеи становились фильмами и
+                                    культурными событиями.</p>
+                            </details>
+                        </div>
+                    </article>
+                    <article class="person">
+                        <div class="person-image filmmaker"></div>
+                        <div>
+                            <p class="eyebrow">КИНОРЕЖИССЁР</p>
+                            <h3>Взгляд, который<br>сохраняет</h3>
+                            <p>Авторское видение, документальное и игровое кино.</p>
+                            <details>
+                                <summary>О направлении</summary>
+                                <p>Работа с героями и материалом, поиск визуального языка и создание истории на всех
+                                    этапах производства.</p>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="services" class="section">
+                <div class="container">
+                    <p class="eyebrow">УСЛУГИ</p>
+                    <div class="service-grid" id="service-grid"></div>
+                </div>
+            </section>
+            <section id="gallery" class="section container">
+                <div class="section-top">
+                    <p class="eyebrow">ГАЛЕРЕЯ</p>
+                    <div class="filters" role="group" aria-label="Категории галереи"><button class="active"
+                            data-filter="all" aria-pressed="true">Все</button><button data-filter="photo"
+                            aria-pressed="false">Фото</button><button data-filter="video"
+                            aria-pressed="false">Видео</button><button data-filter="expedition"
+                            aria-pressed="false">Экспедиции</button><button data-filter="events"
+                            aria-pressed="false">События</button><button data-filter="people"
+                            aria-pressed="false">Люди</button></div>
+                </div>
+                <div id="gallery-grid" class="gallery-grid"></div>
+            </section>
+            <section id="history" class="history scenic">
+                <div class="container">
+                    <div class="copy">
+                        <p class="eyebrow">ИСТОРИЯ АРЖААН-2</p>
+                        <h2>Тайны царя и царицы<br>в сердце Тувы</h2>
+                        <p>Аржаан-2 — история скифского наследия, сохранившегося в сердце Тувы. Золотые украшения,
+                            звериный стиль и образы древней культуры становятся отправной точкой для разговора о времени
+                            и человеческой судьбе.</p>
+                        <div class="timeline">
+                            <div><b>Древность</b><span>Эпоха скифов</span></div>
+                            <div><b>Открытие</b><span>Работа археологов</span></div>
+                            <div><b>Наследие</b><span>Язык искусства</span></div>
+                            <div><b>Сегодня</b><span>Новые истории</span></div>
+                        </div>
+                        <details>
+                            <summary class="outline">Узнать больше</summary>
+                            <p>Наш интерес к Аржаан-2 — это поиск связи между культурой прошлого и современным
+                                человеком. Через кино, исследование и художественные образы мы обращаемся к вопросам
+                                памяти, власти и наследия.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+            <section id="films" class="section container">
+                <div class="section-top">
+                    <p class="eyebrow">ФИЛЬМЫ И ИНТЕРВЬЮ</p><button class="text-button" id="show-videos">Смотреть
+                        все</button>
+                </div>
+                <div class="film-grid" id="film-grid"></div>
+            </section>
+        </main>
+        <footer id="contacts">
+            <div class="container footer-grid">
+                <div><a class="brand" href="#home"><img src="assets/emblem.webp" alt="">СКИФ МЕДИА</a>
+                    <p>Создаём смыслы.<br>Сохраняем наследие.</p><button class="text-button" id="replay">Повторить
+                        вступление</button>
+                </div>
+                <div>
+                    <p class="eyebrow">НАВИГАЦИЯ</p><a href="#about">О компании</a><a href="#people">Люди</a><a
+                        href="#services">Услуги</a><a href="#gallery">Галерея</a><a href="#history">История Аржаан-2</a>
+                </div>
+                <div>
+                    <p class="eyebrow">СВЯЗАТЬСЯ С НАМИ</p><a href="tel:+79151234567">+7 (915) 123-45-67</a><a
+                        href="mailto:info@skifmedia.ru">info@skifmedia.ru</a>
+                    <p>Москва, Россия</p>
+                </div>
+                <div>
+                    <p class="eyebrow">БУДЬТЕ В КУРСЕ</p>
+                    <p>Новости и анонсы проектов.<br>Напишите нам, чтобы узнать больше.</p><a class="outline"
+                        href="mailto:info@skifmedia.ru?subject=Новости%20СКИФ%20МЕДИА">Связаться с командой</a>
+                </div>
+            </div>
+            <div class="container copyright">© <span id="year"></span> СКИФ МЕДИА. Все права защищены.<span>Кино ·
+                    Культура · Наследие</span></div>
+        </footer>
+    </div>
+    <dialog id="lightbox"><button id="close-dialog" aria-label="Закрыть">×</button><img id="dialog-img" alt="">
+        <div class="dialog-copy">
+            <p id="dialog-type" class="eyebrow"></p>
+            <h3 id="dialog-title"></h3>
+            <p id="dialog-text"></p>
+        </div>
+    </dialog>
+</body>
+
+</html>
